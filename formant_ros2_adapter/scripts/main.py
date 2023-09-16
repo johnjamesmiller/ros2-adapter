@@ -8,7 +8,7 @@ from ros2_adapter import ROS2Adapter
 from utils.logger import get_logger
 import os
 
-ROS2_DOMAIN_ID = os.environ.get("ROS_DOMAIN_ID", None)
+ROS2_DOMAIN_ID = int(os.environ.get("ROS_DOMAIN_ID", None))
 
 FCLIENT_WAIT = 2
 
